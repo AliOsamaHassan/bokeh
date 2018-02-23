@@ -46,6 +46,11 @@ jobs:
       install: scripts/ci/install:test
       script: scripts/ci/test
       env:
+      - GROUP=ts
+
+    - install: scripts/ci/install:test
+      script: scripts/ci/test
+      env:
       - GROUP=examples
       - PYTHON=2.7
 
